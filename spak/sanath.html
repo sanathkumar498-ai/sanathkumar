@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Premium Weather App</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="Search city..."
+        autocomplete="off">
+
+      <button id="searchBtn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
+      <div id="suggestions"></div>
+
+    </div>
+
+
+    <!-- WEATHER CARD -->
+
+    <div class="weather-card">
+
+      <div class="top-section">
+
+        <div>
+
+          <h1 id="cityName">Hyderabad</h1>
+
+          <p id="weatherDesc">Clear Sky</p>
+
+        </div>
+
+        <img
+          id="weatherIcon"
+          src="https://openweathermap.org/img/wn/01d@2x.png">
+
+      </div>
+
+      <h2 id="temperature">32°C</h2>
+
+
+      <!-- DETAILS -->
+
+      <div class="details-grid">
+
+        <div class="detail-card">
+          <i class="fa-solid fa-droplet"></i>
+          <p>Humidity</p>
+          <h3 id="humidity">60%</h3>
+        </div>
+
+        <div class="detail-card">
+          <i class="fa-solid fa-wind"></i>
+          <p>Wind</p>
+          <h3 id="wind">10 km/h</h3>
+        </div>
+
+        <div class="detail-card">
+          <i class="fa-solid fa-temperature-high"></i>
+          <p>Feels Like</p>
+          <h3 id="feelsLike">34°C</h3>
+        </div>
+
+        <div class="detail-card">
+          <i class="fa-solid fa-smog"></i>
+          <p>AQI</p>
+          <h3 id="aqi">82</h3>
+        </div>
+
+      </div>
+
+
+      <!-- FORECAST -->
+
+      <div class="forecast-section">
+
+        <h2>5-Day Forecast</h2>
+
+        <div
+          class="forecast-container"
+          id="forecastContainer">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
